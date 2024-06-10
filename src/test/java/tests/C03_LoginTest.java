@@ -9,7 +9,7 @@ import utilities.Driver;
 
 import static org.testng.Assert.assertEquals;
 
-public class C01_LoginTest {
+public class C03_LoginTest {
 
     @Test
     public void loginTest01() throws InterruptedException {
