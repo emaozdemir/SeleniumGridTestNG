@@ -21,14 +21,14 @@ public class C01_LoginTest {
         Driver.getDriver().get(ConfigReader.getProperty("contact_list_url"));
 
         //Enter email
-        clHomePage.email.sendKeys("clarusway@hotmail.com");
+        clHomePage.email.sendKeys("clarusway@hotmail.com");//kendi mailimle giris yapabildim.
 
         //Enter password
         clHomePage.password.sendKeys("Clarusway.123");
 
         //Click submit
         clHomePage.submit.click();
-        Thread.sleep(200);
+        Thread.sleep(500);
 
         //Assert Contact List Header
         assertEquals(clContactPage.header.getText(), "Contact List");

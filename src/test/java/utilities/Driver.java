@@ -36,8 +36,8 @@ public class Driver {
 
 
             try {
-                 driver = new RemoteWebDriver(new URL("http://192.168.0.16:4444"), desiredCapabilities);
-                //driver = new RemoteWebDriver(new URL("http://localhost:4444"), desiredCapabilities);
+                //   driver = new RemoteWebDriver(new URL("http://192.168.0.16:4444"), desiredCapabilities);
+              driver = new RemoteWebDriver(new URL("http://localhost:4444"), desiredCapabilities);//burdaki url hangi makinede calısılıyorsa onunla ilgili
             } catch (MalformedURLException e) {
                 throw new RuntimeException(e);
             }
